@@ -1,4 +1,4 @@
-.boxSigno {
+.boxMain {
     background-color: #412b64;
     color: #fff;
     margin: 25px 10px 0;
@@ -14,7 +14,7 @@
     height: 200px;
 }
 
-.imagemSigno {
+.imagem {
     width: 140px;
     height: 100px;
     background-color: #fff;
@@ -27,13 +27,13 @@
     flex: 1;
 }
 
-.nomeSigno {
+.nome {
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.periodoNascimento {
+.dataCriacao {
     font-size: 14px;
 }

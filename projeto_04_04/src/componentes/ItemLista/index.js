@@ -3,12 +3,12 @@ import './style.css';
 
 export default function ItemLista(props) {
     return (
-        <div className="boxSigno">
-            <div className="nomeSigno">
-                {props.signo}
+        <div className="boxMain">
+            <div className="nome">
+                {props.areas}
             </div>
-            <img className="imagemSigno" src={props.imagem} alt={props.signo} />
-            <div className="periodoNascimento">
+            <img className="imagem" src={props.imagem} alt={props.areas} />
+            <div className="dataCriacao">
                 {props.descricao}
             </div>
         </div>
