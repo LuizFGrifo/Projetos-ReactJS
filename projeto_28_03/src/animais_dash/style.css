@@ -1,0 +1,19 @@
+.animais {
+    background-color: #23232e;
+    color: #fff;
+}
+
+.animal {
+    border: 1.5px solid yellowgreen;
+}
+
+.animalInfo h2 {
+    font-size: 32px;
+    color: yellowgreen;
+}
+
+.animal img {
+    padding-top: 10px;
+    height: 480px;
+    width: 50%;
+}
