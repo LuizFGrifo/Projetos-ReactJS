@@ -37,3 +37,15 @@
 .dataCriacao {
     font-size: 14px;
 }
+
+.descricao p {
+    padding-bottom: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.descricao h1,
+h2 {
+    text-align: center;
+    color: #fff;
+}
