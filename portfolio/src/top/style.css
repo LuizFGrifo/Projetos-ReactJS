@@ -1,0 +1,62 @@
+.top-container {
+    background-color: black;
+    color: #777777;
+    bottom: 1;
+    left: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.top-text {
+    margin: 10px;
+    font-size: 3vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation: blinking 2s infinite;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .top-container {
+        height: auto;
+        /* Ajustar a altura do footer automaticamente com base no conteúdo */
+        padding: 10px;
+        /* Espaçamento interno para evitar cortes de texto */
+    }
+
+    .top-text {
+        font-size: 1.5vh;
+        /* Reduzir o tamanho da fonte para telas menores */
+        white-space: normal;
+        /* Permitir que o texto quebre em várias linhas */
+    }
+}
+
+@keyframes blinking {
+    0% {
+        color: #777777;
+        /* Cor inicial do texto (cinza) */
+    }
+
+    50% {
+        color: #00FFFF;
+        /* Cor intermediária do texto (azul claro, escuro) */
+    }
+
+    100% {
+        color: #777777;
+        /* Cor final do texto (cinza) */
+    }
+}

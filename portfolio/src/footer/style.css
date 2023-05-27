@@ -1,0 +1,64 @@
+/* Estilos base para o footer */
+.footer-container {
+    background-color: black;
+    color: #777777;
+    text-align: center;
+    /* Centralizar o conteúdo do footer */
+    bottom: 0;
+    /* Alinhar o footer na parte inferior */
+    left: 0;
+    /* Alinhar o footer à esquerda */
+    width: 100%;
+    /* Largura total do footer */
+    height: auto;
+    /* Ajustar a altura do footer automaticamente com base no conteúdo */
+    display: flex;
+    /* Utilizar display flex para centralizar verticalmente */
+    justify-content: center;
+    /* Centralizar horizontalmente */
+    align-items: center;
+    /* Centralizar verticalmente */
+}
+
+.footer-content {
+    display: flex;
+    /* Utilizar display flex para alinhar verticalmente o conteúdo do footer */
+    flex-direction: column;
+    /* Alinhar verticalmente em uma coluna */
+    justify-content: center;
+    /* Centralizar verticalmente */
+    align-items: center;
+    /* Centralizar horizontalmente */
+    height: 100%;
+    /* Altura total ocupada pelo conteúdo do footer */
+}
+
+.footer-text {
+    margin: 10px;
+    /* Margem em torno do texto */
+    font-size: 2vh;
+    /* Tamanho da fonte relativo à altura da viewport */
+    white-space: nowrap;
+    /* Impedir que o texto seja quebrado em várias linhas */
+    overflow: hidden;
+    /* Ocultar o conteúdo excedente */
+    text-overflow: ellipsis;
+    /* Adicionar reticências (...) quando o texto estourar o container */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .footer-container {
+        height: auto;
+        /* Ajustar a altura do footer automaticamente com base no conteúdo */
+        padding: 10px;
+        /* Espaçamento interno para evitar cortes de texto */
+    }
+
+    .footer-text {
+        font-size: 1.5vh;
+        /* Reduzir o tamanho da fonte para telas menores */
+        white-space: normal;
+        /* Permitir que o texto quebre em várias linhas */
+    }
+}

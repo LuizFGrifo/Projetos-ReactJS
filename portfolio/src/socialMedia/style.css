@@ -1,0 +1,18 @@
+.contato {
+    margin-left: 30px;
+    display: inline-flex;
+}
+
+.social-image {
+    width: 53px;
+    height: 44px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media (min-width: 768px) {
+    .contato {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+}
