@@ -1,11 +1,22 @@
 import React from 'react';
 import './style.css';
+import Java from '../image/java.png'
+import Reactjs from '../image/react.png'
+import C from '../image/c.png'
+import R from '../image/r.png'
+import Python from '../image/python.png'
 
 export default function SumaryContainer() {
     return (
         <div className="sumary-container">
             <div className="sumary-text">
                 <h1><strong>Habilidades em Linguagens de Programação e Bibliotecas</strong><br /></h1>
+                <div className='div-image'>
+                    <img src={Python} alt="" />
+                    <img src={R} alt="" />
+                    <img src={C} alt="" />
+                    <img src={Java} alt="" />
+                    <img src={Reactjs} alt="" /></div>
                 <p className="sumario">
                     <strong>Resumo das Habilidades:<br /><br /></strong>  </p>
 

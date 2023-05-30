@@ -3,7 +3,7 @@
 }
 
 h1 {
-    color: white;
+    color: #CCCCCC;
     text-align: center;
     font-size: 19px;
 }
@@ -12,6 +12,8 @@ h1 {
     max-width: 220px;
     max-height: 190px;
     text-align: center;
+    border: 2px solid darkblue;
+    border-radius: 6px;
 }
 
 .description-image {
@@ -28,7 +30,7 @@ h1 {
     width: 95vw;
     padding-left: 1%;
     text-align: justify;
-    color: white;
+    color: #CCCCCC;
 }
 
 .description-text h2 {

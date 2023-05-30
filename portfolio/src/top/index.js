@@ -1,11 +1,17 @@
 import React from 'react';
 import './style.css';
 
-const Top = () => {
+function Top() {
+    const [data, setData] = React.useState(null);
+    React.useEffect(() => {
+        fetch("/api")
+            .then((res) => res.json())
+            .then((data) => setData(data.message));
+    }, []);
     return (
         <top className="top-container">
             <div className="top-content">
-                <p className="top-text">Seja bem-vindo(a) ao meu portfolio profissional</p>
+                <p className="top-text">{!data ? "Loading..." : data}</p>
             </div>
         </top>
     );
